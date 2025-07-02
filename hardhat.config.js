@@ -14,10 +14,10 @@ const config = {
     }
   },
   networks: {
-    automation_network: {
-      url: RPC_URL || "http://localhost:8545",
-      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
-      chainId: parseInt(CHAIN_ID || "31337"),
+    bloctopus: {
+      url: RPC_URL,
+      accounts: [PRIVATE_KEY],
+      chainId: parseInt(CHAIN_ID),
       gas: 'auto',
       gasPrice: 'auto',
       timeout: 60000
